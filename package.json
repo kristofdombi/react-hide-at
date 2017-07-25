@@ -22,6 +22,29 @@
   "files": [
     "dist/HideAt.js"
   ],
+  "keywords": [
+    "react",
+    "css",
+    "styles",
+    "display-none",
+    "toggle",
+    "stateless-function",
+    "responsive",
+    "responsive utility",
+    "utility",
+    "airbnb",
+    "breakpoint",
+    "breakpoints",
+    "alter",
+    "ux",
+    "display",
+    "react-display",
+    "react-hide-at",
+    "HideAt",
+    "hide",
+    "airbnb",
+    "react-with-styles"
+  ],
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.5.2",
