@@ -2,7 +2,7 @@
   "name": "react-hide-at",
   "version": "1.0.0",
   "description": "React stateless functional component for altering the visual experience of responsive and lean webpages.",
-  "main": "lib/HideAt.js",
+  "main": "dist/HideAt.js",
   "scripts": {
     "build": "npm run clean && mkdir -p ./dist && babel HideAt.jsx --out-file dist/HideAt.js",
     "clean": "rm -rf dist",
