@@ -1,6 +1,6 @@
 {
   "name": "react-hide-at",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React stateless functional component for altering the visual experience of responsive and lean webpages.",
   "main": "dist/HideAt.js",
   "scripts": {
