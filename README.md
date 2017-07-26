@@ -1,4 +1,4 @@
-# react-with-breakpoints
+# react-hide-at
 
 Build leaner webpages with `react-hide-at` like Airbnb. 👌
 
