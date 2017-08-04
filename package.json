@@ -8,8 +8,7 @@
     "clean": "rm -rf dist",
     "lint": "./node_modules/.bin/eslint HideAt.jsx",
     "prepublish": "npm run lint && npm run build",
-    "test": "jest",
-    "test:coverage": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
