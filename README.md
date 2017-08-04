@@ -1,6 +1,7 @@
 # react-hide-at
 
 [![Build Status](https://travis-ci.org/kristof0425/react-hide-at.svg?branch=master)](https://travis-ci.org/kristof0425/react-hide-at)
+[![Coverage Status](https://coveralls.io/repos/github/kristof0425/react-hide-at/badge.svg?branch=chore%2Fupdate-package)](https://coveralls.io/github/kristof0425/react-hide-at?branch=master)
 
 Build leaner webpages with `react-hide-at` like Airbnb. 👌
 
