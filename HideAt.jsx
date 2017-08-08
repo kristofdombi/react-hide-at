@@ -44,7 +44,7 @@ function HideAt(props) {
 }
 
 HideAt.propTypes = {
-  breakpoint: PropTypes.oneOf(['small', 'medium', 'mediumAndBelow', 'mediumAndAbove', 'large']).isRequired,
+  breakpoint: PropTypes.oneOf(['small', 'medium', 'mediumAndBelow', 'mediumAndAbove', 'largeAndBelow', 'large']).isRequired,
   // eslint-disable-next-line
   breakpoints: PropTypes.object,
   currentBreakpoint: PropTypes.string,

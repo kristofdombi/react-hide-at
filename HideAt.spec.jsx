@@ -15,6 +15,7 @@ describe('<HideAt />', () => {
     $.setProps({ currentBreakpoint: 'medium' });
     assert.equal($.props().currentBreakpoint, 'medium');
   });
+
   it('renders child if props are different', () => {
     const $ = mount((
       <HideAt breakpoint="small" currentBreakpoint="medium">
@@ -23,7 +24,62 @@ describe('<HideAt />', () => {
     ));
     assert($.contains(<div>Hello</div>), true);
   });
-  it('doesn\'t render its children if props are the same', () => {
+
+  it('renders its children if breakpoint is mediumAndBelow and currentBreakpoint is large', () => {
+    const $ = mount((
+      <HideAt breakpoint="mediumAndBelow" currentBreakpoint="large">
+        <div>Hello</div>
+      </HideAt>
+    ));
+    assert($.contains(<div>Hello</div>), true);
+  });
+
+  it('renders its children if breakpoint is large and currentBreakpoint is medium', () => {
+    const $ = mount((
+      <HideAt breakpoint="large" currentBreakpoint="medium">
+        <div>Hello</div>
+      </HideAt>
+    ));
+    assert($.contains(<div>Hello</div>), true);
+  });
+
+  it('hides its children if breakpoint is large and currentBreakpoint is large', () => {
+    const $ = mount((
+      <HideAt breakpoint="large" currentBreakpoint="large">
+        <div>Hello</div>
+      </HideAt>
+    ));
+    assert.deepStrictEqual($.children().exists(), false);
+  });
+
+  it('hides its children if breakpoint is largeAndBelow and currentBreakpoint is large', () => {
+    const $ = mount((
+      <HideAt breakpoint="largeAndBelow" currentBreakpoint="large">
+        <div>Hello</div>
+      </HideAt>
+    ));
+    assert.deepStrictEqual($.children().exists(), false);
+  });
+
+  it('hides its children if breakpoint is mediumAndAbove and currentBreakpoint is large', () => {
+    const $ = mount((
+      <HideAt breakpoint="mediumAndAbove" currentBreakpoint="large">
+        <div>Hello</div>
+      </HideAt>
+    ));
+    assert.deepStrictEqual($.children().exists(), false);
+  });
+
+  it('hides its children if breakpoint is medium and currentBreakpoint is medium', () => {
+    const $ = mount((
+      <HideAt breakpoint="medium" currentBreakpoint="medium">
+        <div>Hello</div>
+      </HideAt>
+    ));
+    assert.deepStrictEqual($.children().exists(), false);
+  });
+
+  it('hides its children if props are the same', () => {
     const $ = mount((
       <HideAt breakpoint="mediumAndBelow" currentBreakpoint="medium">
         <div>Hello</div>
